@@ -35,11 +35,11 @@ public class HistorialAccion {
     @Column(name = "tipo_accion", nullable = false)
     private TipoAccionEnum tipoAccion;
 
-    @Lob
+    
     @Column(name = "datos_antes", columnDefinition = "TEXT")
     private String datosAntes;
 
-    @Lob
+    
     @Column(name = "datos_despues", columnDefinition = "TEXT")
     private String datosDespues;
 

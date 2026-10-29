@@ -13,6 +13,6 @@ public interface IngresoRepository extends JpaRepository<Ingreso, Long> {
 
     List<Ingreso> findByPresupuestoIdAndEliminadoFalseOrderByFechaIngresoDesc(Long presupuestoId);
 
-    @Query("SELECT COALESCE(SUM(i.monto), 0) FROM Ingreso i WHERE i.presupuesto.id = :presupuestoId AND i.eliminado = false")
+    @Query("SELECT COALESCE(SUM(i.monto), 0L) FROM Ingreso i WHERE i.presupuesto.id = :presupuestoId AND i.eliminado = false")
     Long sumMontoByPresupuestoId(@Param("presupuestoId") Long presupuestoId);
 }
