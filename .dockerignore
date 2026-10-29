@@ -1,0 +1,17 @@
+# Nunca debe entrar en la imagen (contiene la contraseña de la base de datos)
+.env
+
+target
+.git
+.gitignore
+.vscode
+.idea
+*.md# Nunca debe entrar en la imagen (contiene la contraseña de la base de datos)
+.env
+
+target
+.git
+.gitignore
+.vscode
+.idea
+*.md
